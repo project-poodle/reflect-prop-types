@@ -1,6 +1,6 @@
 {
   "name": "reflect-prop-types",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "reflect prop types",
   "main": "index.js",
   "scripts": {
