@@ -53,7 +53,7 @@ function createInnerPropertyTypes(outer, propTypes){
 
 newPropTypes._original = originalPropTypes
 
-module.exports = {
-  ...newPropTypes,
-  default: newPropTypes,
-}
+module.exports = newPropTypes
+//  ...newPropTypes,
+//  default: newPropTypes,
+//}
