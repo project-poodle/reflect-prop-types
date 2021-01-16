@@ -2,7 +2,7 @@
 //We need to ensure that we are using the same react module as the component we are using
 //For this to happen our script can't depend on react, and we must import react from the target node_modules folder
 //import React from 'react'
-import * as PropTypes from 'prop-types'
+const PropTypes = require('prop-types')
 
 var originalPropTypes = PropTypes;
 var newPropTypes = {}
@@ -46,4 +46,6 @@ function createInnerPropertyTypes(outer, propTypes){
   outer.isRequired.inner = propTypes
 }
 
-export default newPropTypes
+module.exports = {
+  PropTypes: newPropTypes
+}
