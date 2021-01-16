@@ -2,6 +2,7 @@
 //We need to ensure that we are using the same react module as the component we are using
 //For this to happen our script can't depend on react, and we must import react from the target node_modules folder
 //import React from 'react'
+const React = require(process.cwd() + "/node_modules/react")
 const PropTypes = require('prop-types')
 
 var originalPropTypes = PropTypes;
@@ -17,12 +18,16 @@ for(var propType in originalPropTypes){
   );
 }
 
-//React.PropTypes = newPropTypes
+React.PropTypes = newPropTypes
 
 //Enforce different scope for each property
 function reflectiveGetter(propType){
   return function(){
-    return createReflectivePropType(propType);
+    if (propType === 'PropTypes') {
+      return propType
+    } else {
+      return createReflectivePropType(propType);
+    }
   }
 }
 
