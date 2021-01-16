@@ -1,0 +1,22 @@
+{
+  "name": "reflect-prop-types",
+  "version": "0.1.0",
+  "description": "reflect prop types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-poodle/reflect-prop-types.git"
+  },
+  "author": "Project Poodle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/project-poodle/reflect-prop-types/issues"
+  },
+  "homepage": "https://github.com/project-poodle/reflect-prop-types#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  }
+}
