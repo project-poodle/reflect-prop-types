@@ -51,6 +51,8 @@ function createInnerPropertyTypes(outer, propTypes){
 // console.log(`original`, originalPropTypes)
 // console.log(`new`, newPropTypes)
 
+newPropTypes._original = originalPropTypes
+
 module.exports = {
   PropTypes: newPropTypes
 }
