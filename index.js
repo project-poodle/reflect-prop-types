@@ -1,6 +1,6 @@
 const { PropTypes } = require('./reflectPropTypes')
 
-console.log(PropTypes)
+// console.log(PropTypes)
 
 module.exports = {
   PropTypes: PropTypes

@@ -11,9 +11,10 @@ for(var propType in originalPropTypes){
   // Create a new reflective property each time the getter is called
   Object.defineProperty(newPropTypes, propType,
     {
-       get: reflectiveGetter(propType)
-     }
-   );
+      get: reflectiveGetter(propType),
+      enumerable: true,
+    }
+  );
 }
 
 //React.PropTypes = newPropTypes
@@ -45,6 +46,10 @@ function createInnerPropertyTypes(outer, propTypes){
   outer.inner = propTypes;
   outer.isRequired.inner = propTypes
 }
+
+// console.log(PropTypes)
+// console.log(`original`, originalPropTypes)
+// console.log(`new`, newPropTypes)
 
 module.exports = {
   PropTypes: newPropTypes
