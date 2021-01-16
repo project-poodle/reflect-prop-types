@@ -5,5 +5,4 @@ console.log('PropTypes', PropTypes)
 module.exports = {
   ...PropTypes,
   default: PropTypes,
-  PropTypes: PropTypes,
 }

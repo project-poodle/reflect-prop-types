@@ -55,6 +55,5 @@ newPropTypes._original = originalPropTypes
 
 module.exports = {
   ...newPropTypes,
-  PropTypes: newPropTypes,
   default: newPropTypes,
 }
