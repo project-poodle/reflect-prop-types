@@ -3,5 +3,7 @@ const PropTypes = require('./reflectPropTypes')
 console.log('PropTypes', PropTypes)
 
 module.exports = {
-  default: PropTypes
+  ...PropTypes,
+  default: PropTypes,
+  PropTypes: PropTypes,
 }
