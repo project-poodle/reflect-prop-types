@@ -1,3 +1,3 @@
-* reflect-prop-types
+# reflect-prop-types
 
-Reflective PropTypes
+This package is reflective PropTypes
