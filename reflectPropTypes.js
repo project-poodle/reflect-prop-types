@@ -23,11 +23,11 @@ for(var propType in originalPropTypes){
 //Enforce different scope for each property
 function reflectiveGetter(propType){
   return function(){
-    if (propType === 'PropTypes') {
-      return propType
-    } else {
-      return createReflectivePropType(propType);
-    }
+    // if (propType === 'PropTypes') {
+    //   return propType
+    // } else {
+    //   return createReflectivePropType(propType);
+    // }
   }
 }
 
@@ -59,6 +59,3 @@ function createInnerPropertyTypes(outer, propTypes){
 // newPropTypes._original = originalPropTypes
 
 module.exports = newPropTypes
-//  ...newPropTypes,
-//  default: newPropTypes,
-//}

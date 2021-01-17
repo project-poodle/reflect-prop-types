@@ -1,8 +1,5 @@
 const PropTypes = require('./reflectPropTypes')
 
-console.log('PropTypes', PropTypes)
+// console.log('PropTypes', PropTypes)
 
 module.exports = PropTypes
-//  ...PropTypes,
-//  default: PropTypes,
-//}
